@@ -6,7 +6,6 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from string import Template
 
-
 from dotenv import load_dotenv
 
 CAMINHO_ARQUIVO = Path(__file__).parent / 'message.html'

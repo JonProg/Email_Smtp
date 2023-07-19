@@ -25,7 +25,7 @@ smtp_password = os.getenv('EMAIL_PASSWORD', '')
 with open(CAMINHO_ARQUIVO, 'r', encoding="utf-8") as arquivo:
     texto_arquivo = arquivo.read()
     template = Template(texto_arquivo)
-    texto_email = template.substitute(nome='Samuel')
+    texto_email = template.substitute(nome='Jonas')
 
 mime_multipart = MIMEMultipart()
 mime_multipart['from'] = remetente
@@ -37,7 +37,6 @@ corpo_email = MIMEText(texto_email, 'html', 'utf-8')
 
 #Anexando a mensagem
 mime_multipart.attach(corpo_email)
-
 
 # Envia o e-mail
 with smtplib.SMTP(smtp_server, smtp_port) as server:

@@ -29,7 +29,7 @@ with open(CAMINHO_ARQUIVO, 'r', encoding="utf-8") as arquivo:
 mime_multipart = MIMEMultipart()
 mime_multipart['from'] = remetente
 mime_multipart['to'] = destinatario
-mime_multipart['subject'] = 'Creater -- Company'
+mime_multipart['subject'] = 'Damas Premier'
 
 #Criando o texto 
 corpo_email = MIMEText(texto_email, 'html', 'utf-8')
